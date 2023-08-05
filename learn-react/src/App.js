@@ -5,19 +5,16 @@ import { useState } from 'react';
 
 function App() {
 
-  const [data, setData] = useState("Rohit");
-
-  function updateData(){
-    setData("Bhardwaj");
+  function Apple(){
+    alert("Function Called");
   }
 
-
   return (
-    //here we are expecting to change data value from Rohit to Bhardwaj on button click
-    
-    <div className="App">
-      <h1>{data}</h1>
-      <button onClick={updateData}>Click me!</button>
+ <div className="App">
+      <h1>Hello world!</h1>
+      <button onClick={Apple()}>Click me!</button>
+      {/* //This way usually we call a function */}
+      {/* This will result an automatic pop alert on page load */}
       <User/>
     </div>
   );
