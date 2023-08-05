@@ -12,9 +12,8 @@ function App() {
   return (
  <div className="App">
       <h1>Hello world!</h1>
-      <button onClick={Apple()}>Click me!</button>
-      {/* //This way usually we call a function */}
-      {/* This will result an automatic pop alert on page load */}
+      <button onClick={Apple}>Click me!</button>
+      {/* This is the correct way thats how we call a function on click event */}
       <User/>
     </div>
   );
