@@ -5,16 +5,16 @@ import { useState } from 'react';
 
 function App() {
 
-  function Apple(){
-    alert("Function Called");
+  const [data, setData] = useState(0);
+
+  function updateData(){
+    setData(data+1);
   }
 
   return (
  <div className="App">
-      <h1>Hello world!</h1>
-      {/* we can pass a function to event like this too */}
-      <button onClick={()=> Apple() }>Click me!</button>
-      {/* Now, this will exact react what we want */}
+      <h1>{data}</h1>
+      <button onClick={()=> updateData() }>Click me!</button>
       <User/>
     </div>
   );
