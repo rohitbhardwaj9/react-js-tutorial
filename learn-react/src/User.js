@@ -4,7 +4,7 @@ class User extends Component {
         return(
             //This is also JSX
             <div>
-                <h1>Hello User from class component!</h1>
+                <h1>{10+20}</h1>
             </div>
             //JSX ends here
         );
