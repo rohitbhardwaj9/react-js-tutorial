@@ -5,15 +5,16 @@ import { useState } from 'react';
 
 function App() {
 
-  function Apple(){
-    alert("Function Called");
-  }
+  // function Apple(){
+  //   alert("Function Called");
+  // }
 
   return (
  <div className="App">
       <h1>Hello world!</h1>
-      <button onClick={Apple}>Click me!</button>
-      {/* This is the correct way thats how we call a function on click event */}
+      {/* What if we pass alert in onclick event */}
+      <button onClick={alert("Loaded")}>Click me!</button>
+      {/* This will also alert automatically on page load, no required to onClick event */}
       <User/>
     </div>
   );
