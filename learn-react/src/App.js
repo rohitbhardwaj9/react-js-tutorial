@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import User from './User';
-import { useState } from 'react';
+import React, {Component} from "react";
+import logo from "./logo.svg"
+import "./App.css"
 
-function App() {
+class App extends Component{
 
-  const [data, setData] = useState(0);
-
-  function updateData(){
-    setData(data+1);
+  constructor(){
+    super();
+    this.state = {
+      data : "Rohit"
+    }
   }
 
-  return (
- <div className="App">
-      <h1>{data}</h1>
-      <button onClick={()=> updateData() }>Click me!</button>
-      <User/>
-    </div>
-  );
-}
+  render(){
+    return(
+      <div className="App">
+        <h2>{this.state.data}</h2>
+      </div>
+    );
+  }
 
+}
 export default App;
