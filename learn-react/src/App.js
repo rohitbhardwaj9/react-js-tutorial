@@ -7,13 +7,13 @@ class App extends Component{
   constructor(){
     super();
     this.state = {
-      data : "Rohit"
+      data : 0
     }
   }
 
   update(){
     // alert("Alert");
-    this.setState({data: "Bhardwaj"});
+    this.setState({data: this.state.data+1});
   }
 
 
