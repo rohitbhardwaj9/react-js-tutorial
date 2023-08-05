@@ -1,5 +1,5 @@
-import React from 'react';
-class User extends React.Component {
+import React, {Component} from 'react';
+export default class User extends Component {
     render(){
         return(
             <div>
@@ -8,5 +8,3 @@ class User extends React.Component {
         );
     }
 }
-
-export default User;
