@@ -1,32 +1,19 @@
-import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import User from './User';
 
 function App() {
-  function Apple(){
-    return(
-      <div>
-        <h3>Component within component</h3>
-      </div>
-    );
-  }
   return (
+    // start
+    // This is JSX code
+    //JSX stands for Javascript XML
+    //JSX allow us to write HTML in react using javascript file
     <div className="App">
       <h1>Hello World !</h1>
-      <User></User>
-      <Apple />
-      {Apple ()}
+      <User/>
     </div>
+    //end
   );
 }
 
-class User extends Component {
-    render(){
-        return(
-            <div>
-                <h1>Hello User from class component!</h1>
-            </div>
-        );
-    }
-}
 export default App;
