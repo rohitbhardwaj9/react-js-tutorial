@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
 class User extends Component {
     render(){
-        return(
-            //This is also JSX
-            <div>
-                <h1>{10+20}</h1>
-            </div>
-            //JSX ends here
-        );
+        return React.createElement("div", null, React.createElement("h1", null, "Yo, This is without JSX!"))
     }
 }
 
