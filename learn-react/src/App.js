@@ -1,6 +1,7 @@
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import User from './User';
+
 function App() {
   return (
     <div className="App">
@@ -10,4 +11,13 @@ function App() {
   );
 }
 
+class User extends Component {
+    render(){
+        return(
+            <div>
+                <h1>Hello User from class component!</h1>
+            </div>
+        );
+    }
+}
 export default App;
