@@ -11,10 +11,17 @@ class App extends Component{
     }
   }
 
+  update(){
+    // alert("Alert");
+    this.setState({data: "Bhardwaj"});
+  }
+
+
   render(){
     return(
       <div className="App">
         <h2>{this.state.data}</h2>
+        <button onClick={()=>this.update()}>Click me</button>
       </div>
     );
   }
